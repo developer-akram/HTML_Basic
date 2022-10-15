@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .mytable {
+            border: 10px solid rgb(0, 0, 230);
+            text-align: left;
+            background-color: rgb(37, 36, 36);
+            font-size: 20px;
+            font-family: Consolas;
+            padding: 50px;
+            /* width: 50%; */
+            
+        }
+        th{
+            color: rgb(107, 2, 7);
+            background-color: rgb(159, 255, 255);
+            font-size: larger;
+            padding: 20px;
+            border-radius: 0.75rem;
+            border: 3px solid rgb(0, 0, 238);
+            /* margin: 2px; */
+        }
+        td{
+            color: rgb(18, 6, 70);
+            font-size: larger;
+            background-color: rgb(126, 206, 21);
+            padding: 4px;
+            padding: 5px;
+            border-radius: 0.75rem;
+        }
+        th:hover,td:hover{
+            background-color: rgb(122, 24, 0);
+            color: rgb(128, 255, 206);
+        }
+        .size{
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+            margin: 10px;
+            font-weight:bolder;
+            border-radius: 0.5rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <form>
+            <table class="mytable">
+                <tr>
+                    <th><label for="fname" > First Name :</label></th>
+                    <td>
+                        <input class="size" type="text" name="fname" id="fname" placeholder="Type Here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="lname"> Last Name :</label></th>
+                    <td>
+                        <input class="size" type="text" name="lname" id="lname" placeholder="Type Here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="faname"> Father's Name :</label></th>
+                    <td>
+                        <input class="size" type="text" name="faname" id="faname" placeholder="Type Here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="moname"> Mother's Name :</label></th>
+                    <td>
+                        <input class="size" type="text" name="moname" id="moname" placeholder="Type Here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label> Select Gender :</label></th>
+                    <td class="size" align="center">
+                        <label for="male"><input type="radio" name="gender" id="male">Male</label>
+                        <label for="female"><input type="radio" name="gender" id="female">Female</label>
+                        <label for="other"><input type="radio" name="gender" id="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="">Mobile No :</label></th>
+                    <td><input class =size type="mobile" name="mobile" id="mobile"placeholder="123-4567-890"required minlength="10" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label>Choose Course :</label></th>
+                    <td><select name="course"class="size">
+                            <option value="noset" id="noset" selected style="text-align: center;">Select here</option>
+                            <optgroup label="Java">
+                                <option value="fnjava" name="course">Java front-end</option>
+                                <option value="bnjava" name="course">Java back-end</option>
+                                <option value="fljava" name="course">Java full-stack</option>
+                            </optgroup>
+                            <optgroup label="Python">
+                                <option value="fnpython" name="course">Python front-end</option>
+                                <option value="bnpython" name="course">Python back-end</option>
+                                <option value="flpython" name="course">Python full-stack</option>
+                            </optgroup>
+                            <optgroup label="Android">
+                                <option value="fnandroid" name="course">Android front-end</option>
+                                <option value="bnandroid" name="course">Android back-end</option>
+                                <option value="flandroid" name="course">Android full-stack</option>
+                            </optgroup>
+                        </select></td>
+                </tr>
+                <tr>
+                    <th><label>Select Days :</label></th>
+                    <td class="size"><input type="checkbox" name="day" id="monday">
+                        <label for="monday">Monday</label><br>
+                        <input type="checkbox" name="day" id="tuesday">
+                        <label for="tuesday">Tuesday</label><br>
+                        <input type="checkbox" name="day" id="wednesday">
+                        <label for="wednesday">Wednesday</label><br>
+                        <input type="checkbox" name="day" id="thursday">
+                        <label for="thursday">Thursday</label><br>
+                        <input type="checkbox" name="day" id="friday">
+                        <label for="friday">Friday</label><br>
+                        <input type="checkbox" name="day" id="saturday">
+                        <label for="saturday">Saturday</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Last Qualification :</label>
+                    </th>
+                    <td class="size" >
+                        <label for="SSC"><input type="radio" name="qualification" id="SSC">SSC</label><br>
+                        <label for="Intermediate"><input type="radio" name="qualification"
+                                id="Intermediate">Intermediate</label><br>
+                        <label for="Graduate"><input type="radio" name="qualification"
+                                id="Graduate">Graduate</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Passout Year</label>
+                    </th>
+                    <td><select class="size">
+                        <option value="noyear" align = "center">Select a year</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="center" style="background-color:rgb(37, 36, 36) ;border: none; padding:0;"><input type="image" src="./submit.png" alt="Submit icon" width="200px" height="150px"> </th>
+                </tr>
+        </form>
+        </table>
+    </div>
+</body>
+
+</html>

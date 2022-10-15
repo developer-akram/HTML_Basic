@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td rowspan="2" style="width:1000px;padding-left: 300px;">Nested Table 3px
+                    <table border="1">
+                        <tr>
+                            <th>Row 1</th>
+                            <td>N Data 1</td>
+                        </tr>
+                        <tr>
+                            <th>Row 2</th>
+                            <td>N Data 1</td>
+                        </tr>
+                        <tr>
+                            <th>Row 3</th>
+                            <td>N Data 1</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Data 4</td>
+            </tr>
+            <tr>
+                <td>Nested Table 2
+                    <table border="1">
+                        <tr>
+                            <th>Row 1</th>
+                            <td>Data 1</td>
+                        </tr>
+                        <tr>
+                            <th>Row 2</th>
+                            <td>Data 1</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Data 2</td>
+                <!-- <td>Data 3</td> -->
+                <td rowspan="2">Data 4</td>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <!-- <td>Data 4</td> -->
+            </tr>
+            <tr>
+                <td colspan="4">Data 1</td>
+                <!-- <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
